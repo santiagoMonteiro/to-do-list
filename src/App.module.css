@@ -1,0 +1,47 @@
+.wrapper {
+  max-width: 46rem;
+  margin: -1.6875rem auto 0;
+}
+
+.taskForm {
+  display: grid;
+  grid-template-columns: 1fr 5.625rem;
+  gap: 0.5rem;
+  height: 3.375rem;
+}
+
+.taskInput {
+  width: 100%;
+  border: 1px solid var(--gray-700);
+  outline: 0;
+  padding: 1rem;
+  background: var(--gray-500);
+  font-weight: 400;
+}
+
+.taskInput:placeholder {
+  color: var(--gray-300);
+}
+
+.addTaskButton {
+  cursor: pointer;
+  font-weight: bold;
+  background: var(--blue-dark);
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+
+  transition: background-color 0.1s;
+}
+
+.addTaskButton:hover {
+  background-color: var(--blue);
+}
+
+.taskInput,.addTaskButton {
+  border-radius: 8px;
+  border: 0;
+  color: var(--gray-100);
+}
