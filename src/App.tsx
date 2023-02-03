@@ -25,9 +25,9 @@ export function App() {
 
         <GlobalTaskInfo />
 
-        <NoTaskNotification />
+        {/* <NoTaskNotification /> */}
 
-        {/* <TaskList /> */}
+        <TaskList />
       </main>
     </>
   );
