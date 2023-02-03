@@ -1,9 +1,10 @@
 import styles from "./App.module.css";
-import clipboard from "./assets/clipboard.svg";
 import { PlusCircle } from "phosphor-react";
 
 import { Header } from "./Header";
 import { TaskList } from "./TaskList";
+import { GlobalTaskInfo } from "./GlobalTaskInfo";
+import { NoTaskNotification } from "./NoTaskNotification";
 
 export function App() {
   return (
@@ -22,13 +23,11 @@ export function App() {
           </button>
         </form>
 
-        {/* <div>
-          <img src={clipboard} alt="" />
-          <p>Você ainda não tem tarefas cadastradas</p>
-          <p>Crie tarefas e organize seus itens a fazer</p>
-        </div>
+        <GlobalTaskInfo />
 
-        <TaskList /> */}
+        <NoTaskNotification />
+
+        {/* <TaskList /> */}
       </main>
     </>
   );

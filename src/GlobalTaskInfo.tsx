@@ -2,14 +2,14 @@ import styles from "./GlobalTaskInfo.module.css";
 
 export function GlobalTaskInfo() {
   return (
-    <div>
-      <div>
+    <div className={styles.container}>
+      <div className={styles.createdTasks}>
         <p>Tarefas criadas</p>
-        <span>5</span>
+        <span className={styles.taskLength}>5</span>
       </div>
-      <div>
+      <div className={styles.finishedTasks}>
         <p>Concluídas</p>
-        <span>2 de 5</span>
+        <span className={styles.taskLength}>0</span>
       </div>
     </div>
   );

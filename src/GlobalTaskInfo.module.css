@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.createdTasks, .finishedTasks {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.createdTasks p {
+  font-weight: 700;
+  color: var(--blue);
+  font-size: 0.875rem;
+}
+
+.finishedTasks p {
+  font-weight: 700;
+  color: var(--purple);
+  font-size: 0.875rem;
+}
+
+.taskLength {
+  color: var(--gray-200);
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
