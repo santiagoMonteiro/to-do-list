@@ -1,6 +1,7 @@
 .wrapper {
-  max-width: 46rem;
+  max-width: 48rem;
   margin: -1.6875rem auto 0;
+  padding: 0 1rem;
 }
 
 .taskForm {
@@ -49,4 +50,10 @@
   border-radius: 8px;
   border: 0;
   color: var(--gray-100);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
 }

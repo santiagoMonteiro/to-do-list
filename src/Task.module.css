@@ -21,7 +21,7 @@
 .checkButton {
   height: 1.5rem;
   width: 1.5rem;
-  border-radius: 50%;
+  border-radius: 0.75rem;
   border: 2px solid var(--blue);
   background: transparent;
   transition: background-color 0.1s;
@@ -39,11 +39,16 @@
   justify-content: center;
   height: 1.5rem;
   width: 1.5rem;
-  border-radius: 50%;
+  border-radius: 0.75rem;
   border: none;
   background: var(--purple-dark);
   color: var(--gray-100);
   transition: background-color 0.1s;
+}
+
+.checkButtonActive + p {
+  color: var(--gray-300);
+  text-decoration: line-through;
 }
 
 .checkButtonActive:hover {
