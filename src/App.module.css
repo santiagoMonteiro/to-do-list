@@ -13,15 +13,21 @@
 
 .taskInput {
   width: 100%;
-  border: 1px solid var(--gray-700);
+  border: 1.5px solid var(--gray-700);
   outline: 0;
   padding: 1rem;
   background: var(--gray-500);
   font-weight: 400;
+  border-radius: 8px;
+  color: var(--gray-100);
 }
 
 .taskInput:placeholder {
   color: var(--gray-300);
+}
+
+.taskInput:focus {
+  border: 1.5px solid var(--purple-dark);
 }
 
 .addTaskButton {
@@ -33,6 +39,9 @@
   align-items: center;
   justify-content: center;
   font-size: 0.875rem;
+  border-radius: 8px;
+  border: 0;
+  color: var(--gray-100);
 
   transition: background-color 0.1s;
 }
@@ -44,12 +53,6 @@
 .addTaskButton:disabled {
   opacity: 0.7;
   cursor: not-allowed;
-}
-
-.taskInput,.addTaskButton {
-  border-radius: 8px;
-  border: 0;
-  color: var(--gray-100);
 }
 
 @media (max-width: 768px) {

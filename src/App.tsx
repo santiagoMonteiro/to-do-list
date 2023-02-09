@@ -5,7 +5,7 @@ import { Header } from "./Header";
 import { TaskList } from "./TaskList";
 import { GlobalTaskInfo } from "./GlobalTaskInfo";
 import { NoTaskNotification } from "./NoTaskNotification";
-import { ChangeEvent, FormEvent, useEffect, useRef, useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 
 let idCounter = 0;
 
@@ -18,12 +18,6 @@ export interface Task {
 export function App() {
   const [newTaskText, setNewTaskText] = useState("");
   const [tasks, setTasks] = useState<Task[]>([]);
-
-  const taskInput = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    taskInput.current?.focus();
-  }, [tasks]);
 
   const isNewTaskEmpty = newTaskText.length === 0;
 
@@ -57,7 +51,6 @@ export function App() {
             placeholder="Adicione uma nova tarefa"
             value={newTaskText}
             onChange={handleNewTaskChange}
-            ref={taskInput}
           />
           <button
             className={styles.addTaskButton}
