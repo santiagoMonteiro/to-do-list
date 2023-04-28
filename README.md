@@ -1,5 +1,5 @@
 # to-do-list
-application to control tasks of the day
+### Application to control tasks of the day
 
 ![image](https://user-images.githubusercontent.com/78314940/235242777-bf7b15f7-0ff1-4b15-8037-2b93a6c4ac58.png)
 
